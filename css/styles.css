@@ -65,14 +65,14 @@ ul {
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
   min-width: 320px;
   margin: 0 auto;
+  padding-top: 16px;
+  padding-bottom: 16px;
 }
 .header .container {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  padding-top: 16px;
-  padding-bottom: 16px;
 }
 .logo {
   font-family: 'Raleway', sans-serif;
@@ -128,7 +128,7 @@ ul {
   flex-direction: column;
   width: 100%;
   height: 100vh;
-  background: var(--color-cloud);
+  background: var(--color-white);
   top: 0;
   left: 0;
   transition: 0.5s;
@@ -167,7 +167,7 @@ ul {
   font-weight: 500;
   line-height: 1.2;
   letter-spacing: 0.02em;
-  color: var(--color-slate);
+  color: var(--color-iris);
 }
 .contact-item-mobile:hover,
 .contact-item-mobile:focus,
@@ -177,8 +177,7 @@ ul {
 }
 .mobile-social-links {
   display: flex;
-  justify-content: space-between;
-  gap: 16px;
+  gap: 56px;
   flex-shrink: 0;
 }
 .mobile-social-links .icon {
@@ -191,10 +190,10 @@ ul {
 .hero {
   background-color: var(--color-navy-blue);
   background-image: linear-gradient(
-      to bottom,
-      rgba(46, 47, 66, 0.7),
-      rgba(46, 47, 66, 0.7)
-    ),
+    to bottom,
+    rgba(46, 47, 66, 0.7),
+    rgba(46, 47, 66, 0.7)
+  ),
     url(../images/people-office-320.jpg);
   background-repeat: no-repeat;
   background-position: center;
@@ -256,7 +255,7 @@ ul {
 }
 .our-advantages-title {
   color: var(--color-navy-blue);
-  font-weight: 500;
+  font-weight: 700;
   font-size: 36px;
   line-height: 1.11;
   letter-spacing: 0.02em;
@@ -810,7 +809,6 @@ input[type='checkbox']:checked + label span {
 
 @media (min-width: 768px) {
   .container {
-    min-width: 768px;
     width: 768px;
   }
   /* Header */
@@ -826,7 +824,6 @@ input[type='checkbox']:checked + label span {
     display: flex;
     flex-direction: row;
     align-items: center;
-    margin-right: 10px;
   }
   .menu-mobile-block {
     visibility: hidden;
@@ -1035,7 +1032,6 @@ input[type='checkbox']:checked + label span {
     padding: 120px 0;
   }
   .container {
-    min-width: 1158px;
     width: 1158px;
     padding: 0 15px;
   }
